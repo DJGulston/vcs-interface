@@ -1,0 +1,193 @@
+/*
+  Page header is fixed, allowing the heading to stay in place while the user scrolls down.
+  Z index of the header is set to 100 to ensure that it is displayed above all other
+  elements on the page.
+*/
+.main-header {
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index: 100;
+  background-color: rgb(50, 50, 50);
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+h1 {
+  color: lightcoral;
+}
+
+.header-item-section {
+  position: relative;
+  height: 90px;
+}
+
+/* Website name placed on the left hand side of the header. */
+.header-item-1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -ms-transform: translate(-80%, -50%);
+  transform: translate(-80%, -50%);
+  color:lightcoral;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Navigation menu placed on the right hand side of the header. */
+.header-item-2 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  -ms-transform: translate(-10%, -50%);
+  transform: translate(-10%, -50%);
+}
+
+/* Navigation Menu link item is lightcoral. */
+.link-item {
+  color:lightcoral;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form-block {
+  display:block;
+}
+
+/* Displays textfield label within the 20% of the block space. */
+.form-label {
+  width:20%;
+  display: inline-block;
+}
+
+/* Displays textfield input within the remaining 80% of the block space. */
+.form-input {
+  width:80%;
+  display: inline-block;
+}
+
+/* Displays a red error alert. */
+.input-alert {
+  text-align: center;
+  color:red;
+  border: 1px red solid;
+  border-radius: 6px;
+  background-color: pink;
+  padding:4px;
+  margin-bottom: 6px;
+  display:inline-flex;
+}
+
+.search-block {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-heading {
+  text-align: center;
+}
+
+/* Close X symbol in the error alerts set to a slightly darker red. */
+.close-x {
+  margin-left: 5px;
+  margin-right: 2px;
+  color:rgb(181, 0, 0);
+}
+
+/* Displays list of repos in 3-column grid format. */
+.repo-list {
+  margin:20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:30px;
+}
+
+.repo-section {
+  border:1px solid whitesmoke;
+  background-color: rgb(50, 50, 50);
+  padding:25px;
+  border-radius: 20px;
+}
+
+/* All links that take us to webpages outside of our website are limegreen. */
+.external-link {
+  color: limegreen;
+}
+
+/* Displays list of users in a 2-column grid format. */
+.user-list {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.user-section {
+  border: 1px solid whitesmoke;
+  background-color: rgb(50, 50, 50);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+/* All links that navigate us between different pages of our website are skyblue. */
+.internal-link {
+  text-decoration: none;
+  color:skyblue;
+  font-weight: bold;
+}
+
+/* Creates circular profile pictures for the GitHub and GitLab profile. */
+.avatar-img {
+  width: 120px;
+  border-radius: 60px;
+  margin:20px auto;
+  margin-top: 0px;
+  display: block;
+}
+
+.commit-message {
+  margin: 25px;
+}
+
+/* Underline all commit message list items. */
+.commit-message > li {
+  text-decoration: underline;
+}
+
+/* Bullet point for the each list item in the commit message list is set to bold. */
+.commit-message > li::marker {
+  font-weight: bold;
+}
+
+.secondary-heading {
+  margin-top: 30px;
+}
+
+.commit-message-label {
+  color:lightgreen;
+  font-weight: bold;
+}
+
+/* Creates a circular loading icon out of colored borders. */
+.loading-icon {
+  display: block;
+  width:40px;
+  height:40px;
+  border:10px solid lightgrey;
+  margin:40px auto;
+  border-radius:20px;
+  border-top: 10px solid blue;
+  animation:icon-spin 1.5s linear infinite;
+}
+
+/* Animation for the loading icon. */
+@keyframes icon-spin {
+  0% { transform:rotate(0deg); }
+
+  100% { transform:rotate(360deg); }
+}

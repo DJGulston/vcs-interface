@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders correctly 1`] = `
+<div>
+  <header
+    className="main-header"
+  >
+    <div
+      className="header-item-section"
+    >
+      <span
+        className="header-item-1"
+      >
+        VCS Interface
+      </span>
+      <nav
+        className="header-item-2"
+      >
+        <a
+          className="link-item"
+          href="/"
+          onClick={[Function]}
+        >
+          Search
+        </a>
+      </nav>
+    </div>
+  </header>
+  <div
+    className="container"
+    style={
+      Object {
+        "marginTop": "90px",
+      }
+    }
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-12"
+      >
+        <div
+          className="card"
+          style={
+            Object {
+              "backgroundColor": "rgb(50, 50, 50)",
+              "border": "1px solid rgb(100, 100, 100)",
+              "borderRadius": "25px",
+              "margin": "40px auto",
+              "padding": "30px",
+              "width": "75%",
+            }
+          }
+        >
+          <h1
+            className="page-heading"
+          >
+            Search
+          </h1>
+          <div
+            className="search-block"
+          >
+            <div
+              className="form-block"
+            >
+              <label
+                className="form-label"
+                htmlFor="username"
+              >
+                Username
+              </label>
+              <input
+                className="form-input"
+                id="username"
+                name="username"
+                placeholder="Search for username..."
+                type="text"
+              />
+            </div>
+            <div
+              className="form-block"
+            >
+              <div
+                className="form-label"
+              />
+              <span
+                className="form-input"
+              >
+                <button
+                  onClick={[Function]}
+                >
+                  Search
+                </button>
+              </span>
+            </div>
+          </div>
+          <div
+            className="user-list"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
